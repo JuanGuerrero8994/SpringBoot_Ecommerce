@@ -4,9 +4,7 @@ import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor  // Constructor con tres parámetros
 @ToString
-@EqualsAndHashCode
 public class AuthResponseDTO<T> {
     private boolean success;
     private String message;

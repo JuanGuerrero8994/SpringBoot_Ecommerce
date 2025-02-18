@@ -1,10 +1,5 @@
 package com.devjuanguerrero.firstapi.application.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 
 public class AuthRequestDTO {
     private String email;

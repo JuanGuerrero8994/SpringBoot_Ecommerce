@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
-@RequiredArgsConstructor
 public class AuthController {
 
     private final AuthInputPort authenticatorInputPort;
+
+    public AuthController(AuthInputPort authenticatorInputPort) {
+        this.authenticatorInputPort = authenticatorInputPort;
+    }
 
     @PostMapping("/login")
     public void authenticate(@RequestBody AuthRequestDTO request) {

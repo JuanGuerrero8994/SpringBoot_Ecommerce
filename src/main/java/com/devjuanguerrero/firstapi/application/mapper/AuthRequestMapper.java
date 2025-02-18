@@ -9,7 +9,7 @@ public class AuthRequestMapper {
     public User toUser(AuthRequestDTO authRequestDTO) {
         User user = new User();
         user.setEmail(authRequestDTO.getEmail());
-        user.setPasswordHash(authRequestDTO.getPassword());
+        user.setPassword(authRequestDTO.getPassword());
         return user;
     }
 }
